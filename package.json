@@ -1,0 +1,25 @@
+{
+  "name": "savvy--project-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACG5/Savvy--project-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACG5/Savvy--project-2/issues"
+  },
+  "homepage": "https://github.com/FACG5/Savvy--project-2#readme",
+  "devDependencies": {
+    "tape": "^4.9.1"
+  }
+}
