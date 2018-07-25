@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "directories":
-  {"test":"test"},
+
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-      "start": "node ./src/server.js",
-      "test": "tape test/test.js"
+    "test": "tape test/test.js"
+    "start": "node ./src/server.js"
+
   },
   "repository": {
     "type": "git",
