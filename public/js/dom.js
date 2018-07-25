@@ -14,7 +14,7 @@ btn.addEventListener("click", function(e) {
   res.textContent = "";
   e.preventDefault();
   url =
-    "http://makeup-api.herokuapp.com/api/v1/products.json?brand=" + input.value;
+    "https://makeup-api.herokuapp.com/api/v1/products.json?brand=" + input.value;
   feachApi(null, "GET", url, function(arr) {
     arr.forEach(function(x) {
       var name = x.name;
