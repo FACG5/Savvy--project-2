@@ -1,13 +1,16 @@
 const fs = require("fs");
 const path = require("path");
-const getData = require('./accessData');
+const getData = require("./accessData");
 const querystring = require("querystring");
 
 function handelHomePage(req, res) {
   res.writeHead(200, {
     "content-type": "text/html"
   });
-  fs.readFile(path.join(__dirname, "..", "public/index.html"), function(err, file) {
+  fs.readFile(path.join(__dirname, "..", "public/index.html"), function(
+    err,
+    file
+  ) {
     if (err) {
       console.log(err);
     } else {
@@ -25,7 +28,8 @@ function serverStaticFile(req, res) {
     js: "application/javascript",
     jpg: "image/jpg",
     png: "image/png",
-    json: "application/json"
+    json: "application/json",
+    jpeg: "image/jpg"
   };
   res.writeHead(200, {
     "content-type": contenttype[extention]
@@ -34,7 +38,6 @@ function serverStaticFile(req, res) {
     if (err) {
       console.log(err);
     } else {
-
       res.end(file);
     }
   });
@@ -61,7 +64,6 @@ function handelAutoComplete(req, res) {
     res.end(JSON.stringify(arr));
   });
 }
-
 
 module.exports = {
   handelAutoComplete,

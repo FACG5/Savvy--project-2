@@ -3,27 +3,27 @@ const getData = require('./../src/accessData');
 const boldLatter = require('./../public/js/logic.js');
 
 test("test for getData function ", (t) => {
-  a = {
+  obj = {
     wordAutoComplete: 'a'
   };
-  const actual = getData(a).length;
-  const expected = 10
+  const actual = getData(obj).length;
+  const expected = 3;
   t.equal(actual, expected, "function should retutn 10 results");
   t.end();
 });
 test("test for getData function ", (t) => {
-  a = {
+  obj = {
     wordAutoComplete: 'a'
   };
-  const actual = getData(a)[0][0];
+  const actual = getData(obj)[0][0];
   const expected = 'A';
   t.equal(actual, expected, "first element should have capital a");
   t.end();
 });
 test("test for boldLatter function ", (t) => {
-  var ar1 = ['hand', 'head', 'heel'];
+  var arr = ['hand', 'head', 'heel'];
   var val = 'h';
-  const actual = boldLatter(ar1, val);
+  const actual = boldLatter(arr, val);
   const expected = ['Hand', 'Head', 'Heel'];
   t.deepEqual(actual, expected, "function should retutn capitalized elements ");
   t.end();
