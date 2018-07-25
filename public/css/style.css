@@ -13,17 +13,18 @@ h1 {
   margin-bottom: 20px;
 }
 
+#sec {
+  margin-top: 6%
+}
 
 body {
-  font: 16px Arial;
+  font: 16px;
   text-align: center;
-  font-style: Arimo;
+  font-style: Titillium;
   width: 100%;
   padding: 60px 20px 20px 20px;
   height: 100vh;
-  background: url("../img/brush.jpg") center center no-repeat;
-  background-size: cover;
-  /* background-repeat: no-repeat; */
+  background: url("../img/cover.jpeg");
 }
 
 #myInput {
@@ -32,6 +33,21 @@ body {
   height: 40px;
   border-radius: 5%;
   paz
+}
+
+#results {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 10px;
+}
+
+.img_makeup {
+  margin: 1%;
+  border: 4px solid #ffcccc;
+  border-radius: 8px;
+  width: 210px;
 }
 
 input {
@@ -45,7 +61,6 @@ input {
   position: relative;
   display: inline-block;
   width: 30%;
-
 }
 
 input[type=submit] {
@@ -53,15 +68,45 @@ input[type=submit] {
   border-radius: 15%;
   cursor: pointer;
   margin-left: 7px;
- }
+}
+
+.results {
+  justify-content: center;
+}
 
 @media screen and (max-width:600px) {
-
-
   .autocomplete {
     position: relative;
     display: inline-block;
     width: 50%;
+  }
+  #results {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
 
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  #results {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+  }
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  #results {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-gap: 10px;
   }
 }

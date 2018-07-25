@@ -1,5 +1,4 @@
-
-function boldLatter(arr, value) {
+function boldLetter(arr, value) {
   return arr.map((ele) => {
     return ele.substr(0, value.length).toUpperCase() + ele.substr(value.length);
   })
@@ -7,5 +6,4 @@ function boldLatter(arr, value) {
 
 if (typeof module !== "undefined") {
   module.exports = boldLatter;
-
 }

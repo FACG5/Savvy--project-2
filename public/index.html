@@ -10,17 +10,23 @@
 </head>
 
 <body>
-  <div id="main">
-    <h1 class="header">Makeup finder</h1>
-    <form action="/index.html" name="wordAutoComplete" method="post">
-      <div class="autocomplete">
-        <input list="list" id="myInput" aria-label="input" type="text" placeholder="Mackup">
-      </div>
-      <input type="submit" aria-label="button"></input>
-      <datalist id="list">
+  <section>
+    <div id="main">
+      <h1 class="header">Makeup finder</h1>
+      <form action="/index.html" name="wordAutoComplete" method="post">
+        <div class="autocomplete">
+          <input list="list" id="myInput" aria-label="input" type="text" placeholder="Mackup">
+        </div>
+        <input type="submit" aria-label="button" id="btn"></input>
+        <datalist id="list">
                 </datalist>
-    </form>
+      </form>
+  </section>
+  <section id="sec">
+    <div id="results">
   </div>
+  <section>
+  <script src="/public/js/fetch.js"></script>
   <script src="/public/js/logic.js"></script>
   <script src="/public/js/dom.js"></script>
 </body>
