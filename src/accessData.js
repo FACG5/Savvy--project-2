@@ -1,4 +1,4 @@
-const DataName = require("./DataName.json");
+const DataName = require("./DataBrand1.json");
 
 function getData(data) {
   var arr = [];
