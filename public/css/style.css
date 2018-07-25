@@ -1,0 +1,67 @@
+@import "https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple";
+@import "https://fonts.googleapis.com/css?family=Arimo|Titillium+Web|Hind";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: Rancho;
+  font-size: 40px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+
+body {
+  font: 16px Arial;
+  text-align: center;
+  font-style: Arimo;
+  width: 100%;
+  padding: 60px 20px 20px 20px;
+  height: 100vh;
+  background: url("../img/brush.jpg") center center no-repeat;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+#myInput {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 40px;
+  border-radius: 5%;
+  paz
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+
+}
+
+input[type=submit] {
+  background-color: #ffcccc;
+  border-radius: 15%;
+  cursor: pointer;
+  margin-left: 7px;
+ }
+
+@media screen and (max-width:600px) {
+
+
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+
+  }
+}

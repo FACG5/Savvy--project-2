@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="public/css/style.css" />
+  <title>Makeup finder</title>
 </head>
+
 <body>
-    <div id="main">
-        <form action="/index.html" name="wordAutoComplete" method="post">
-                <input list="list" id="myInput" type="text" placeholder="Mackup">
-                <input type="submit"></input>
-                <datalist id="list">
+  <div id="main">
+    <h1 class="header">Makeup finder</h1>
+    <form action="/index.html" name="wordAutoComplete" method="post">
+      <div class="autocomplete">
+        <input list="list" id="myInput" aria-label="input" type="text" placeholder="Mackup">
+      </div>
+      <input type="submit" aria-label="button"></input>
+      <datalist id="list">
                 </datalist>
-        </form>
-    </div>
-    <script src="/public/js/dom.js"></script>
+    </form>
+  </div>
+  <script src="/public/js/dom.js"></script>
 </body>
+
 </html>
-<style>
-    #main{
-        display: flex;
-        justify-content: center;
-        margin-top: 10%;
-    }
-    .item{
-        background-color:aqua;
-    }
-    
-</style>
