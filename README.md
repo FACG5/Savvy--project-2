@@ -43,12 +43,13 @@ brush.jpg
 ---
 
 # User Experience:
-* **As a user as soon as I start typing in the input field:**
->I can find the products of the make-up brand I'm looking for.
->I want the input bar to autocomplete and offer a list of sugestions in case I forget.
->Resuts will be overlayed on the screen.
+* **As a user, as soon as I start typing in the input field:**
+* >I can find the products of the make-up brand I'm looking for.
+* >I want the input bar to autocomplete and offer a list of sugestions in case I forget.
+* >Resuts will be overlayed on the screen.
 
-
+* **As a user browsing from my mobile phone:**
+* >I'd like for your website settings to be as navigatable as on desktop. 
 ---
 
 # What did we learn:
