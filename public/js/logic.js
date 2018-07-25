@@ -5,5 +5,5 @@ function boldLetter(arr, value) {
 }
 
 if (typeof module !== "undefined") {
-  module.exports = boldLatter;
+  module.exports = boldLetter;
 }
