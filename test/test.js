@@ -7,8 +7,8 @@ test("test for getData function ", (t) => {
     wordAutoComplete: 'a'
   };
   const actual = getData(obj).length;
-  const expected = 3;
-  t.equal(actual, expected, "function should retutn 10 results");
+  const expected = 4;
+  t.equal(actual, expected, "function should retutn 4 results");
   t.end();
 });
 test("test for getData function ", (t) => {
