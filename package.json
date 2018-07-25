@@ -1,16 +1,14 @@
 {
   "name": "savvy--project-2",
   "version": "1.0.0",
-  "description": "",
+  "description": "---",
   "main": "server.js",
-
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "tape test/test.js",
     "start": "node ./src/server.js"
-
   },
   "repository": {
     "type": "git",
