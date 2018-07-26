@@ -7,7 +7,7 @@ function handelHomePage(req, res) {
   res.writeHead(200, {
     "content-type": "text/html"
   });
-  fs.readFile(path.join(__dirname, "..", "public/index.html"), function(
+  fs.readFile(path.join(__dirname, "..", "public", "index.html"), function(
     err,
     file
   ) {

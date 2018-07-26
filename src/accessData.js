@@ -1,14 +1,9 @@
-const dataName = require("./DataBrand1.json");
+const dataName = require("./DataBrand.json");
 
 function getData(data) {
-  var arr = [];
-  for (let ele of dataName) {
-    if (ele.toLowerCase().startsWith(data.wordAutoComplete.toLowerCase()))
-      arr.push(ele);
-    if (arr.length >3)
-      break;
-  }
-  return arr;
+  return dataName.filter(function(word){ 
+    return word.toLowerCase().startsWith(data.wordAutoComplete.toLowerCase())
+  })
 }
 
 module.exports = getData;
